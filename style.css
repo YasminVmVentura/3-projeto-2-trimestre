@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #2C1B3A; /* Roxo escuro */
+    --cor-principal: #4F2B7F; /* Lilás escuro */
+    --cor-secundaria: #7B4F98; /* Roxo médio */
+    --cor-destaque: #A2A4F3; /* Azul bebê */
+    --cor-texto: #D8C8FF; /* Azul claro */
 }
 
 body {
@@ -14,18 +13,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-}
-
-h1{
+h1 {
     color: var(--cor-destaque);
+    font-family: 'Georgia', serif; /* Fonte mais arredondada */
+    font-style: italic; /* Itálico */
+    font-size: 2rem;
 }
 
 button {
@@ -34,10 +29,42 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
     transition: background-color 0.3s;
+    margin: 10px 0;
+    width: 80%; /* Aumenta o tamanho do botão */
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%; /* Ajustei a largura para 90% para ficar maior, mas ainda responsivo */
+    max-width: 1000px; /* Aumentei o max-width para 1000px */
+    text-align: center;
+    padding: 40px; /* Aumentei o padding para dar mais espaço dentro da caixa */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Apliquei uma sombra um pouco maior para dar mais destaque */
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem; /* Tamanho de fonte maior */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic; /* Fonte itálica */
+}
+
+.caixa-alternativas {
+    margin-top: 20px;
+}
+
+.texto-resultado {
+    font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
+    font-style: italic; /* Itálico no resultado */
+    margin-top: 20px;
 }
